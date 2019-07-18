@@ -1,0 +1,22 @@
+
+quality=25;
+
+pin_radius=2.5;
+pin_length=15;
+
+backing_thickness=2;
+
+
+
+difference()
+{
+    union()
+    {
+        cylinder(r=pin_radius,h=pin_length,$fn=quality);
+        cylinder(r=pin_radius*2,h=backing_thickness,$fn=quality);
+        
+        //bell clip
+        translate([0,0,pin_length]) cylinder(r1=pin_radius*1.5,r2=pin_radius,h=backing_thickness,$fn=quality);
+    }
+    translate([0,pin_radius*1.5,pin_length+backing_thickness*2]) scale([1,1,5]) rotate([90,90,0]) cylinder(r=pin_radius,h=pin_radius*3,$fn=3);
+}
