@@ -8,7 +8,7 @@ union()
 
 //bars
 piston_dist=10;
-bar_radius=2;
+bar_radius=2.5;
     
 translate([0,0,piston_dist]) rotate([-90,0,0]) cylinder(r=bar_radius,h=gap_dist,$fn=quality);
 translate([piston_dist,gap_dist,0]) rotate([-90,0,0]) cylinder(r=bar_radius,h=gap_dist,$fn=quality);

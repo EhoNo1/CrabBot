@@ -1,5 +1,5 @@
 
-ismale=true;
+ismale=false;
 
 quality=25;
 
