@@ -20,7 +20,7 @@ difference()
     }
     union()
     {
-        translate([0,pin_radius*1.5,pin_length+backing_thickness*2]) scale([1,1,5]) rotate([90,90,0]) cylinder(r=pin_radius,h=pin_radius*3,$fn=3);
+        translate([0,pin_radius*1.5,pin_length+backing_thickness]) scale([1,1,5]) rotate([90,90,0]) cylinder(r=pin_radius,h=pin_radius*3,$fn=3);
         rotate([0,0,90]) union()
         {
             translate([pin_radius,-pin_radius*1.5,pin_length]) cube([pin_radius,pin_radius*3,pin_radius]);
