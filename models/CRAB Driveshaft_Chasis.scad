@@ -5,7 +5,7 @@ pin_radius=2.5;
 pin_socket=3;
 
 gear_dist=0;
-gear_radius=15; //<--- include the spacing
+gear_radius=20; //<--- include the spacing
 extension_radius=2.5;
 internal_shaft_length=65; // full body size is this plus 2 * extension_radius
 
