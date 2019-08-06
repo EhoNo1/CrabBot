@@ -46,6 +46,8 @@ difference()
     }
         rotate([-90,0,0]) cylinder(h=internal_shaft_length+extension_radius*2,r=pin_socket*2,$fn=quality);
         translate([0,0,gear_radius+extension_radius]*2) rotate([-90,0,0]) cylinder(h=internal_shaft_length+extension_radius*2,r=pin_socket*2,$fn=quality);
+        translate([pin_socket*2,0,0]) rotate([-90,0,0]) cylinder(r=pin_socket*2,h=internal_shaft_length+extension_radius*2,$fn=3);
+        translate([pin_socket*2,0,gear_radius*2+extension_radius*2]) rotate([-90,0,0]) cylinder(r=pin_socket*2,h=internal_shaft_length+extension_radius*2,$fn=3);
     }
 
 
@@ -59,6 +61,7 @@ difference()
             {
                 rotate([-90,0,0]) cylinder(h=internal_shaft_length+extension_radius*2,r=pin_socket,$fn=quality);
                 translate([0,0,gear_radius+extension_radius]*2) rotate([-90,0,0]) cylinder(h=internal_shaft_length+extension_radius*2,r=pin_socket,$fn=quality);
+
                 
                 for(i = [1:4])
                 {
