@@ -30,8 +30,20 @@ translate([0,gap_dist*4-gear_thickness/2,0]) rotate([-90,0,0]) cylinder(r=piston
 
 //attachment end joints
 joint_radius=2.5;
-joint_height=7;
+joint_height=15;
 
 rotate([90,0,0]) cylinder(r=joint_radius,h=joint_height,$fn=quality);
 translate([0,gap_dist*4,0]) rotate([-90,0,0]) cylinder(r=joint_radius,h=joint_height,$fn=quality);
+
+
+wheel_radius=piston_dist+bar_radius;
+wheel_height=12;
+groove_height=8;
+//groove_thickness;
+
+//Belt wheel
+    difference()
+    {
+        translate([0,gap_dist*4+joint_height,0]) rotate([-90,0,0]) cylinder(h=wheel_height,r=wheel_radius);
+    }
 }
