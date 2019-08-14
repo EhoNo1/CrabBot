@@ -1,12 +1,17 @@
-quality=25;
+include <GlobalVariables.scad>
 
-pin_socket=3;
 
-backing_thickness=2;       //Defines the thickness of the part
-bit_distance=30;            //Defines distance between the two holes
+//Global Variables
+    //quality=25;
+    //pin_socket=3;
+    //backing_thickness=2;       //Defines the thickness of the part
 
-front_thickness=5;   //increases the thickness of the different ends of the part
-back_thickness=3;   //both of these are multiplied by backing_thickness
+
+//Local Variables
+    bit_distance=30;            //Defines distance between the two holes
+
+    front_thickness=5;   //increases the thickness of the different ends of the part
+    back_thickness=3;   //both of these are multiplied by backing_thickness
 
 //TODO: should probably use a computed variable instead of doing X_thickness*backing_thickness over and over again
 
