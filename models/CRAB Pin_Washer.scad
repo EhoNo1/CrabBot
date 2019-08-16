@@ -1,14 +1,15 @@
-quality=25;
-
-pin_gap_radius=3;
-
-backing_thickness=2;
+include <GlobalVariables.scad>
 
 
 
-difference()
-{
-  cylinder(r=pin_gap_radius*2,h=backing_thickness,$fn=quality);
-  cylinder(r=pin_gap_radius,h=backing_thickness,$fn=quality);
-        
+//Global Variables
+    //pin_socket=3;
+    //backing_thickness=2;
+    //quality=25;
+
+
+
+difference() {
+    cylinder(r=pin_socket*2,h=backing_thickness,$fn=quality);
+    cylinder(r=pin_socket,h=backing_thickness,$fn=quality);
 }
