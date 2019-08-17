@@ -13,3 +13,9 @@ pin_socket=3;
 
 backing_thickness=2;
 //All our flat-ish pieces are 2 units thick. This is just to standardize units. Some parts may use a multiple of this variable for spacers.
+
+
+
+//Leg Assembly Specific
+    gear_gap_dist=15;
+    gear_thickness=3;
