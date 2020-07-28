@@ -6,5 +6,5 @@ EXPECT HIGH INSTABILITY AND MAJOR CHANGES
 PROPOSED USES ARE CURRENTLY UNTESTED AND HYPOTHETICAL
 
 # Website
-There currently is no website for the CrabBot project. (EhoNo1 is waiting server for parts to come in.)
+There currently is no working website for the CrabBot project.
 The project can be found at http://CrabBot.info
